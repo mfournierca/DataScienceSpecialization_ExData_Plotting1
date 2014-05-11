@@ -11,6 +11,11 @@ plot2 <- function(DF=NULL) {
   			ylab="Global Active Power (kilowatts)",
   			main="")
 
+}
+
+plot_and_print_2 <- function(DF=NULL) {
+	plot2(DF)
+
 	dev.copy(png, "plot2.png")
 	dev.off()
 }

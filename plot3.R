@@ -14,6 +14,11 @@ plot3 <- function(DF=NULL) {
 
 	legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1))
 
+}
+
+plot_and_print_3 <- function(DF=NULL) {
+	plot3(DF)
+
 	dev.copy(png, "plot3.png")
 	dev.off()
 }

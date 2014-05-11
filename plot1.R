@@ -8,6 +8,13 @@ plot1 <- function(DF=NULL) {
   hist(as.numeric(DF$Global_active_power), col="red", bg="white", 
   			xlab="Global Active Power (kilowatts)",
   			main="Global Active Power")
-  dev.copy(png, "plot1.png")
-  dev.off()
+}
+
+plot_and_print_1 <- function(DF=NULL) {
+
+	plot1(DF)
+
+	dev.copy(png, "plot1.png")
+	dev.off()
+
 }
