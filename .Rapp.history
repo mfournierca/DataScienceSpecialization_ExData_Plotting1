@@ -1,0 +1,96 @@
+library(datasets)
+df <- airpollution
+data(airpollution)
+datasets()
+datasets
+?datasets
+data
+data()
+df <- JohnsonJohnson
+df
+Nile
+ToothGrowth
+df <- ToothGrowth
+head(df)
+head(USArrests)
+df <- sunspot.month
+head(df)
+df
+head(df)
+df <- airquality
+df
+head(df)
+plot(df$Ozone ~ df$Month)
+dev.cur()
+dev.list()
+dev.copy(2, 3)
+dev.new()
+dev.cur()
+dev.set(2)
+window()
+?jpeg
+?windows
+?postscript
+?xfig
+?points
+?plot
+?points
+plot(df$Ozone, df$Month)
+points(1, 2, 1)
+points(1, 2)
+points(1, 6)
+x <- 1:4
+p <- x / sum(x)
+p
+mean(p)
+mean(x*p)
+x*p
+temp <- rbind(x, p)
+mean(temp)
+sum(x*p)
+setwd("/Users/matt/GoogleDrive/life/personal/study/coursera/dataspecialization/exploratoryanalysis/week1/DataScienceSpecialization_ExData_Plotting1")
+source(read_data.R)
+source("read_data.R")
+source("plot1.R")
+DF <- read_data()
+hist(as.numeric(D))
+head(DF)
+hist(as.numeric(DF$Global_active_power), bg="blue"))
+hist(as.numeric(DF$Global_active_power), bg="blue")
+par(bg)
+par("pg")
+par(bg)
+par("bg")
+par(bg="white")
+par("bg")
+par(bg="blue")
+par("bg")
+graphics.off()
+source("plot1.R")
+plot1(DF)
+source("plot1.R")
+plot1(DF)
+par(tite="TEST")
+par(title="TEST")
+source("plot1.R")
+plot1(DF)
+plot1(DF)
+graphics.off()
+plot1(DF)
+par(title="TEST")
+par(tit="TEST")
+title("TEST")
+title(NULL)
+title("TEST")
+title("TEST12")
+?hist
+source("plot1.R")
+plot1(DF)
+line()
+line(DF$Date, DF$Global_active_power)
+graph
+?plot
+plotDF$Date, DF$Global_active_power)
+plot(DF$Date, DF$Global_active_power)
+head(DF)
+plot(DF$Time, DF$Global_active_power)
