@@ -1,22 +1,3 @@
-library(datasets)
-df <- airpollution
-data(airpollution)
-datasets()
-datasets
-?datasets
-data
-data()
-df <- JohnsonJohnson
-df
-Nile
-ToothGrowth
-df <- ToothGrowth
-head(df)
-head(USArrests)
-df <- sunspot.month
-head(df)
-df
-head(df)
 df <- airquality
 df
 head(df)
@@ -49,48 +30,236 @@ temp <- rbind(x, p)
 mean(temp)
 sum(x*p)
 setwd("/Users/matt/GoogleDrive/life/personal/study/coursera/dataspecialization/exploratoryanalysis/week1/DataScienceSpecialization_ExData_Plotting1")
-source(read_data.R)
 source("read_data.R")
 source("plot1.R")
+source("plot2.R")
 DF <- read_data()
-hist(as.numeric(D))
-head(DF)
-hist(as.numeric(DF$Global_active_power), bg="blue"))
-hist(as.numeric(DF$Global_active_power), bg="blue")
-par(bg)
-par("pg")
-par(bg)
-par("bg")
-par(bg="white")
-par("bg")
-par(bg="blue")
-par("bg")
-graphics.off()
-source("plot1.R")
-plot1(DF)
-source("plot1.R")
-plot1(DF)
-par(tite="TEST")
-par(title="TEST")
-source("plot1.R")
-plot1(DF)
-plot1(DF)
-graphics.off()
-plot1(DF)
-par(title="TEST")
-par(tit="TEST")
-title("TEST")
-title(NULL)
-title("TEST")
-title("TEST12")
-?hist
-source("plot1.R")
-plot1(DF)
-line()
-line(DF$Date, DF$Global_active_power)
-graph
+CDF <- cut(DF, DF$Date)
+plot(DF$Global_active_power)
+DF$DateTime <- paste(DF$Date, DF$Time)
+plot(DF$Global_active_power, DF$DateTime)
+as.Date(DF$DateTime)
+as.DateTime
+as.Datetime
+?POSIXlt
+as.POSIXlt("2007-02-02")
+as.POSIXlt("2007-02-02 1230")
+rownames(DF)
+DF$rownames
+plot(rownames(DF), DF$Global_active_power)
+plot(rownames(DF), DF$Global_active_power, type="line")
+plot.factor
+factor
+plot
 ?plot
-plotDF$Date, DF$Global_active_power)
-plot(DF$Date, DF$Global_active_power)
+methods(plot)
+plot.factor
+plot.factor()
+?plot.factor
+factor(DF$Date)
+DF$DateFactor <- factor(DF$Date)
+plot(DF$DateFactor, DF$Global_active_state)
+ISODateTime
+ISODatetime
+ISOdatetime
+ISOdatetime("2014-02-03")
+ISOdatetime("2014-02-03 12:30:23")
+ISOdatetime("2014-02-03 12:30:23")
+plot(rownames(DF), DF$Global_active_power, type="line")
+plot(rownames(DF), DF$Global_active_power, type="line", axes=False)
+plot(rownames(DF), DF$Global_active_power, type="l", axes=False)
+plot(rownames(DF), DF$Global_active_power, type="l", axes=FALSE)
+plot(rownames(DF), DF$Global_active_power, type="l", axes=FALSE)
+?axis
+axis(1, labels=c("Thu", "Fri", "Sat"))
+axis(1, at=c(rownames(DF[DF$Dalabels=c("Thu", "Fri", "Sat"))
+DF[DF$Date == "2007-02-01", ]
+DF[DF$Date == "2007-02-01", ][0]
+DF[, DF$Date == "2007-02-01"]
+DF[DF$Date == "2007-02-01", ]
+DF[DF$Date == "2007-02-01", ] -> tmp
+head(tmp)
+rownames(tmp)[0]
+rownames(tmp)
+class(rownames(tmp)_
+class(rownames(tmp))
+head(tmp)
+rownames(tmp)[0,]
+rownames(tmp)[,0]
+rownames(tmp)[0]
+as.character(rownames(tmp)[0])
+rownames(tmp)[0]
+rownames(tmp) -> tmp
+tmp[0]
+tmp.get
+rowname
+rownames
+first
+at.index
+index
+index()
+DF[DF$Date == "2007-02-01", ] -> tmp
+as.character(tmp) -> tmp
+tmp[0]
+rows
+rows(DF)
+rownames(Df)
+rownames(DF)
+rownames(DF)[0]
+index(DF$Date)
+DF$DateTime
+plot(DF$DateTime, DF$Global_active_power, type="line", axes=FALSE)
+plot(DF$DateTime, DF$Global_active_power, type="l", axes=FALSE)
+plot(as.character(DF$DateTime), DF$Global_active_power, type="l", axes=FALSE)
+plot(as.character(DF$DateTime), DF$Global_active_power, type="l", axes=FALSE, na.rm=TRUE)
+plot(as.character(DF$DateTime), DF$Global_active_power, type="l", axes=FALSE)
+DF$DateTie
+DF$DateTime <- as.POSIXct(paste(DF$Date, DF$Time), format="%Y%m%d %H%M%S")
+DF$DateTime
+paste(DF$Date, DF$Time)
+DF$DateTime <- as.POSIXct(paste(DF$Date, DF$Time), format="%Y%m%d %H:%M:%S")
+DF$DateTime
+paste(DF$Date, DF$Time)
+DF$DateTime <- as.POSIXct(paste(DF$Date, DF$Time), format="%Y%m%d %H:%M:%S")
+as.POSIXct(paste(DF$Date, DF$Time), format="%Y%m%d %H:%M:%S")
+as.POSIXct(DF$Time, format="%Y%m%d")
+as.POSIXct(DF$Date, format="%Y%m%d")
+as.POSIXct(DF$Time, format="%H:%M:%S")
+as.POSIXct(DF$Time, format="%Y%H:%M:%S")
+as.POSIXct(paste(DF$Date, DF$Time), format="%Y-%m-%d %H:%M:%S")
+as.POSIXct(paste(DF$Date, DF$Time), format="%Y-%m-%d %H:%M:%S") -> DF$DateTime
+plot(as.character(DF$DateTime), DF$Global_active_power, type="l", axes=FALSE)
+head(DF$DateTime)
+plot(DF$DateTime, DF$Global_active_power, type="l", axes=FALSE)
+plot(DF$DateTime, DF$Global_active_power, type="l")
+source("plot2.R")
+source("plot2.R")
+plot2()
+source("plot2.R")
+plot2()
+DF$Global_active_power_kilowatts <- DF$Global_active_power / 1000.0
+DF$Global_active_power_kilowatts <- as.numeric(DF$Global_active_power) / 1000.0
+plot2()
+source("plot2.R")
+plot2()
+plot(DF$DateTime, DF$Global_active_power_kilowatts, type="l",#
+  			xlab="",#
+  			ylab="Global Active Power (kilowatts)",#
+  			main="")
+read_data() -> DF
+DF$DateTime <- as.POSIXct(paste(DF$Date, DF$Time), format="%Y-%m-%d %H:%M:%S")
+DF$Global_active_power_kilowatts <- as.numeric(DF$Global_active_power) / 1000.0
+head(DF$Global_active_power_kilowatts)
+plot(DF$DateTime, DF$Global_active_power_kilowatts, type="l",#
+  			xlab="",#
+  			ylab="Global Active Power (kilowatts)",#
+  			main="")
+source("plot2.R")
+plot2()
+source("plot2.R")
+plot2()
 head(DF)
-plot(DF$Time, DF$Global_active_power)
+plot(DF$DateTime, DF$Sub_metering_1, type="l")
+points(DF$DateTime, DF$Sub_metering_2, type="l")
+points(DF$DateTime, DF$Sub_metering_3, type="l")
+graphics.off()
+plot(DF$DateTime, DF$Sub_metering_1, type="l", color="black")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black")
+points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")
+points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+axis(2, at=c(0, 10, 20, 30))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", axes=FALSE)
+axis(2, at=c(0, 10, 20, 30))
+axis(1, at=("Thu", "Fri", "Sat"))
+axis(1, at=c("Thu", "Fri", "Sat"))
+?plot
+> plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black")#
+> points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")#
+> points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black")#
+> points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")#
+> points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black")points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")#
+> points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black")#
+> points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")#
+> points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+axis(3, at)
+axis(3, at=c(0, 10, 20, 30))
+axis(4, at=c(0, 10, 20, 30))
+axis(1, at=c(0, 10, 20, 30))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 4))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 2))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 4))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", axes=FALSE)
+axis(1)
+axis(1, at=DF$DateTime)
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", axes=FALSE)
+axis(1, at=DF$DateTime)
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", axes=FALSE)
+axis(1, at=factor(DF$DateTime))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(-10, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(-10, 30, 4))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3), yaxp="r")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3), yaxd="r")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3), yaxs="r")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3), yaxs="i")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3), yaxs="r")
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=1)
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=3)
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=2)
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=4)
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=5)
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), pch=5)
+?pch
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), lty=c(1,1),#
+lwd=c(2.5,2.5),col=c("blue","red")))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), lty=c(1,1),#
+lwd=c(2.5,2.5))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+legend("topright", col=c("black", "red", "blue"), legend=c("1", "2", "3"), lty=c(1,1))
+legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1))
+plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3))
+legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1))
+source("plot3.R")
+plot3()
+source("plot3.R")
+source("plot3.R")
+plot_and_print_3()
+plot(DF$DateTime, DF$Voltage)
+plot(DF$DateTime, DF$Voltage, type="l")
+colnames(DF)
+plot(DF$DateTime, DF$Global_reactive_power)
+plot(DF$DateTime, DF$Global_reactive_power, type="l")
+source("plot4.R")
+plot_voltage()
+plot_voltage(DF)
+par(mfrow=c(2,2))
+plot_voltage(DF)
+plot_voltage(DF)
+plot_voltage(DF)
+plot_voltage(DF)
+source("plot4.R"0)
+source("plot4.R")
+plot4()
+plot4()
+source("plot4.R")
+plot4()
+dev.copy(png, "plot4.png")
+dev.off()
+source("plot1.R")
+source("plot2.R")
+plot_and_print_1()
+plot_and_print_2()
