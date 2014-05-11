@@ -14,7 +14,7 @@ plot4 <- function(DF=NULL, bg="transparent") {
 
 	plot2(DF, bg=bg, ylab="Global Active Power")
 	plot_voltage(DF)
-	plot3(DF, bg=bg)
+	plot3(DF, bg=bg, lgndbty="n")
 	plot_global_reactive_power(DF)
 }
 
