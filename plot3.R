@@ -5,7 +5,8 @@ plot3 <- function(DF=NULL) {
 		DF <- read_data()
 	}
 	
-	plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", yaxp=c(0, 30, 3),
+	plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", 
+			yaxp=c(0, 30, 3),
 		  	xlab="",
   			ylab="Energy sub metering",
   			main="")
