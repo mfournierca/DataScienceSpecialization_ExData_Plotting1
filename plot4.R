@@ -1,4 +1,4 @@
-plot4 <- function(DF=NULL) {
+plot4 <- function(DF=NULL, bg="transparent") {
 
 	source("plot1.R")
 	source("plot2.R")
@@ -9,6 +9,7 @@ plot4 <- function(DF=NULL) {
 		DF <- read_data()
 	}
 
+	par(bg=bg)
 	par(mfrow=c(2,2))
 
 	plot2(DF)
@@ -17,10 +18,10 @@ plot4 <- function(DF=NULL) {
 	plot_global_reactive_power(DF)
 }
 
-plot_and_print_4 <- function(DF=NULL) {
-	plot4(DF)
+plot_and_print_4 <- function(DF=NULL, bg="transparent") {
+	plot4(DF, bg=bg)
 
-	dev.copy(png, "plot4.png")
+	dev.copy(png, filename="plot4.png", height=480, width=480)
 	dev.off()
 }
 

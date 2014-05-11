@@ -1,25 +1,34 @@
-plot3 <- function(DF=NULL) {
+plot3 <- function(DF=NULL, bg="transparent") {
 
 	if (is.null(DF)) {
 		source("read_data.R")
 		DF <- read_data()
 	}
-	
-	plot(DF$DateTime, DF$Sub_metering_1, type="l", col="black", 
+
+	par(bg=bg)
+
+	plot(DF$DateTime, DF$Sub_metering_1, 
+			type="l", 
+			col="black", 
 			yaxp=c(0, 30, 3),
 		  	xlab="",
   			ylab="Energy sub metering",
   			main="")
-	points(DF$DateTime, DF$Sub_metering_2, type="l", col="red")
-	points(DF$DateTime, DF$Sub_metering_3, type="l", col="blue")
+	points(DF$DateTime, DF$Sub_metering_2, 
+			type="l", 
+			col="red")
+	points(DF$DateTime, DF$Sub_metering_3, 
+			type="l", 
+			col="blue")
 
-	legend("topright", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1))
+	legend("topright", col=c("black", "red", "blue"), 
+			legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1))
 
 }
 
-plot_and_print_3 <- function(DF=NULL) {
-	plot3(DF)
+plot_and_print_3 <- function(DF=NULL, bg="transparent") {
+	plot3(DF,bg=bg)
 
-	dev.copy(png, "plot3.png")
+	dev.copy(png, filename="plot3.png", height=480, width=480)
 	dev.off()
 }
