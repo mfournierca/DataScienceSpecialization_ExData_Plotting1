@@ -12,9 +12,9 @@ plot4 <- function(DF=NULL, bg="transparent") {
 	par(bg=bg)
 	par(mfrow=c(2,2))
 
-	plot2(DF)
+	plot2(DF, bg=bg, ylab="Global Active Power")
 	plot_voltage(DF)
-	plot3(DF)
+	plot3(DF, bg=bg)
 	plot_global_reactive_power(DF)
 }
 

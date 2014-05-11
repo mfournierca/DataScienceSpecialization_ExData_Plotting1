@@ -27,7 +27,7 @@ plot3 <- function(DF=NULL, bg="transparent") {
 }
 
 plot_and_print_3 <- function(DF=NULL, bg="transparent") {
-	plot3(DF,bg=bg)
+	plot3(DF, bg=bg)
 
 	dev.copy(png, filename="plot3.png", height=480, width=480)
 	dev.off()
